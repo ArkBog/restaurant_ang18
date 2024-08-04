@@ -1,5 +1,20 @@
-@for (type of types; track $index) {
-    <div>
-        {{type | replaceUnderscore}}
+<div class="container">
+  @for (type of types; track $index) {
+  <div class="bar" (click)="toogleBar(type)">
+    <p>{{ type | replaceUnderscore }}</p>
+    <p class="material-symbols-outlined"> arrow_downward </p>
+  </div>
+
+  @for (item of menu; track item.id) { @if (item.type === type && showProdcuts === true && type === typeValue) {
+  <div class="card">
+    <img src="menu/1.jpg" alt="" />
+    <p class="name">{{ item.name }}</p>
+    <p class="description">{{ item.description }}</p>
+    <div class="container">
+      <p class="category">{{ item.category }}</p>
+      <p class="price">{{ item.price | currency }}</p>
     </div>
-}
+    <button>ADD TO ORDER</button>
+  </div>
+  } } }
+</div>

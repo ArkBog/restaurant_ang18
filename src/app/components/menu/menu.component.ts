@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../../services/api.service';
 import { ReplaceUnderscorePipe } from "../../pipes/replace-underscore.pipe";
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [ReplaceUnderscorePipe],
+  imports: [ReplaceUnderscorePipe, CurrencyPipe],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss',
 })
@@ -15,6 +16,8 @@ export class MenuComponent {
   menu = this.apiService.data.menu;
 
   types: string[] = [];
+  showProdcuts:boolean = false;
+  typeValue: string = "";
 
   ngOnInit() {
     for (let i = 0; i < this.menu.length; i++) {
@@ -23,4 +26,16 @@ export class MenuComponent {
       }
     }
   }
+
+  toogleBar(type:string){
+    if(!this.showProdcuts){
+      this.showProdcuts = true;
+      this.typeValue = type;
+    } else{
+      this.showProdcuts = false;
+      this.typeValue = "";
+    }
+    console.log(this.showProdcuts, type)
+  }
+
 }

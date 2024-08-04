@@ -32,7 +32,6 @@ export class NavbarComponent {
   classHidden = "hidden"
 
   toggleMenu(){
-    console.log("caaa")
     if(this.classHidden === "hidden"){
       this.classHidden =  ""
     } else{

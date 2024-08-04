@@ -1,0 +1,81 @@
+@import "../../../variables.scss";
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .bar {
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    p{
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
+  }
+}
+
+.card {
+  width: 80%;
+  border-radius: 20px;
+  background-color: $secondary-color;
+  margin: 20px;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(2, 3, 23, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(2, 3, 23, 1);
+  box-shadow: 8px 8px 24px 0px rgba(2, 3, 23, 1);
+  img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    object-fit: contain;
+  }
+  p {
+    background-color: $secondary-color;
+  }
+  .name {
+    background-color: $primary-color;
+    padding: 5px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+  .description {
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 10px;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    background-color: $secondary-color;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .category {
+      color: $primary-color;
+      text-transform: uppercase;
+    }
+    .price {
+      color: $primary-color;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+  button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
