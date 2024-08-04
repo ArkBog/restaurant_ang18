@@ -1,0 +1,17 @@
+<div class="navbar">
+  <div class="logo"><a routerLink="/">L</a></div>
+  <div class="menu" [class]="classHidden">
+    <div class="exit" (click)="toggleMenu()">X</div>
+    @for (option of menu; track $index){
+    <a [routerLink]="option.path" (click)="toggleMenu()">{{ option.name }}</a>
+    }
+  </div>
+  <div class="cart">
+    <span class="material-symbols-outlined">
+      shopping_cart
+      </span>
+  </div>
+  <div class="hamburger" (click)="toggleMenu()">
+    <span class="material-symbols-outlined"> menu </span>
+  </div>
+</div>

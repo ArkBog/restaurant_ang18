@@ -1,0 +1,189 @@
+{
+    "menu": [
+      {
+        "id": 1,
+        "name": "Bruschetta",
+        "description": "Grilled bread garlic topped with diced tomatoes, basil, and olive oil",
+        "price": 8.99,
+        "category": "vegetarian",
+        "type": "appetizer"
+      },
+      {
+        "id": 2,
+        "name": "Stuffed Mushrooms",
+        "description": "Mushrooms filled with cheese and herbs",
+        "price": 9.99,
+        "category": "vegetarian",
+        "type": "appetizer"
+      },
+      {
+        "id": 3,
+        "name": "Garlic Bread",
+        "description": "Toasted bread with garlic butter",
+        "price": 5.99,
+        "category": "vegetarian",
+        "type": "appetizer"
+      },
+      {
+        "id": 4,
+        "name": "Tomato Basil Soup",
+        "description": "Creamy tomato soup with fresh basil",
+        "price": 6.99,
+        "category": "vegetarian",
+        "type": "soup"
+      },
+      {
+        "id": 5,
+        "name": "Minestrone",
+        "description": "Classic Italian vegetable soup",
+        "price": 7.99,
+        "category": "vegetarian",
+        "type": "soup"
+      },
+      {
+        "id": 6,
+        "name": "Caesar Salad",
+        "description": "Romaine lettuce, croutons, and Parmesan cheese with Caesar dressing",
+        "price": 10.99,
+        "category": "vegetarian",
+        "type": "salad"
+      },
+      {
+        "id": 7,
+        "name": "Greek Salad",
+        "description": "Tomatoes, cucumbers, onions, olives, and feta cheese with Greek dressing",
+        "price": 11.99,
+        "category": "vegetarian",
+        "type": "salad"
+      },
+      {
+        "id": 8,
+        "name": "Grilled Salmon",
+        "description": "Fresh salmon grilled to perfection with a side of vegetables",
+        "price": 18.99,
+        "category": "fish",
+        "type": "main_course"
+      },
+      {
+        "id": 9,
+        "name": "Chicken Alfredo",
+        "description": "Fettuccine pasta with creamy Alfredo sauce and grilled chicken",
+        "price": 16.99,
+        "category": "poultry",
+        "type": "main_course"
+      },
+      {
+        "id": 10,
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with fresh tomatoes, mozzarella, and basil",
+        "price": 14.99,
+        "category": "vegetarian",
+        "type": "main_course"
+      },
+      {
+        "id": 11,
+        "name": "Beef Lasagna",
+        "description": "Layered pasta with ground beef, ricotta cheese, and marinara sauce",
+        "price": 17.99,
+        "category": "beef",
+        "type": "main_course"
+      },
+      {
+        "id": 12,
+        "name": "Pork Chops",
+        "description": "Grilled pork chops with mashed potatoes and green beans",
+        "price": 19.99,
+        "category": "pork",
+        "type": "main_course"
+      },
+      {
+        "id": 13,
+        "name": "Lamb Kebabs",
+        "description": "Marinated lamb kebabs served with rice and tzatziki sauce",
+        "price": 21.99,
+        "category": "lamb",
+        "type": "main_course"
+      },
+      {
+        "id": 14,
+        "name": "Tiramisu",
+        "description": "Traditional Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese",
+        "price": 7.99,
+        "category": "vegetarian",
+        "type": "dessert"
+      },
+      {
+        "id": 15,
+        "name": "Cheesecake",
+        "description": "Creamy cheesecake with a graham cracker crust",
+        "price": 6.99,
+        "category": "vegetarian",
+        "type": "dessert"
+      },
+      {
+        "id": 16,
+        "name": "Soft Drinks",
+        "description": "Coke, Diet Coke, Sprite, Fanta",
+        "price": 2.99,
+        "category": "non-alcoholic",
+        "type": "beverage"
+      },
+      {
+        "id": 17,
+        "name": "Coffee",
+        "description": "Freshly brewed regular or decaf coffee",
+        "price": 3.49,
+        "category": "non-alcoholic",
+        "type": "beverage"
+      },
+      {
+        "id": 18,
+        "name": "Iced Tea",
+        "description": "House brewed iced tea",
+        "price": 3.49,
+        "category": "non-alcoholic",
+        "type": "beverage"
+      },
+      {
+        "id": 19,
+        "name": "Red Wine",
+        "description": "Glass of house red wine",
+        "price": 7.99,
+        "category": "alcoholic",
+        "type": "beverage"
+      },
+      {
+        "id": 20,
+        "name": "White Wine",
+        "description": "Glass of house white wine",
+        "price": 7.99,
+        "category": "alcoholic",
+        "type": "beverage"
+      },
+      {
+        "id": 21,
+        "name": "Beer",
+        "description": "Selection of local craft beers",
+        "price": 5.99,
+        "category": "alcoholic",
+        "type": "beverage"
+      },
+      {
+        "id": 22,
+        "name": "Mojito",
+        "description": "Classic cocktail with rum, mint, lime, sugar, and soda water",
+        "price": 8.99,
+        "category": "alcoholic",
+        "type": "beverage"
+      },
+      {
+        "id": 23,
+        "name": "Margarita",
+        "description": "Tequila, lime juice, and triple sec served with a salted rim",
+        "price": 8.99,
+        "category": "alcoholic",
+        "type": "beverage"
+      }
+    ]
+  }
+  

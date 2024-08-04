@@ -1,0 +1,4 @@
+@import url(../../../variables.scss);
+p {
+  background-color: var();
+}

@@ -1,0 +1,12 @@
+<div class="container">
+    <video class="background-video" [autoplay]="autoplay" [muted]="muted" loop>
+        <source src="home.mp4" type="video/mp4" />
+      </video>
+      <div class="buttons">
+        <h1 class="text">
+          The best restaurant in the city
+        </h1>
+        <button (click)="goTo('/menu')">Order now</button>
+        <button (click)="goTo('/book')">Book table</button>
+      </div>
+</div>
