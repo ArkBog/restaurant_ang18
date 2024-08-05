@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../../services/api.service';
-import { ReplaceUnderscorePipe } from "../../pipes/replace-underscore.pipe";
+import { ReplaceUnderscorePipe } from '../../pipes/replace-underscore.pipe';
 import { CurrencyPipe } from '@angular/common';
+import { ProductComponent } from '../product/product.component';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [ReplaceUnderscorePipe, CurrencyPipe],
+  imports: [ReplaceUnderscorePipe, CurrencyPipe, ProductComponent],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss',
 })
@@ -16,8 +17,9 @@ export class MenuComponent {
   menu = this.apiService.data.menu;
 
   types: string[] = [];
-  showProdcuts:boolean = false;
-  typeValue: string = "";
+  showProdcuts: boolean = false;
+  typeValue: string = '';
+  icon: string = 'arrow_downward';
 
   ngOnInit() {
     for (let i = 0; i < this.menu.length; i++) {
@@ -27,15 +29,20 @@ export class MenuComponent {
     }
   }
 
-  toogleBar(type:string){
-    if(!this.showProdcuts){
+  toogleBar(type: string, $index: any, $event: any) {
+    if (!this.showProdcuts) {
       this.showProdcuts = true;
       this.typeValue = type;
-    } else{
+      if ($event.target.innerText === 'arrow_downward') {
+        $event.target.innerText = 'arrow_upward';
+      } else {
+        $event.target.innerText = 'arrow_downward';
+      }
+    } else {
       this.showProdcuts = false;
-      this.typeValue = "";
+      this.typeValue = '';
+      $event.target.innerText = 'arrow_downward';
     }
-    console.log(this.showProdcuts, type)
+    console.log($event);
   }
-
 }
