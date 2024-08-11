@@ -11,3 +11,14 @@ export interface Product {
   category: string;
   type: string;
 }
+
+export interface Seat {
+  positionX: number;
+  positionY: number;
+}
+
+export interface Table {
+  id: number;
+  name: string;
+  seats: Seat[];
+}

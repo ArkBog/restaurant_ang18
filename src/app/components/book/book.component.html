@@ -1,1 +1,13 @@
-<p>book works!</p>
+<div>
+@for (table of tables; track table.id) {
+    <div class="space">
+        <div class="table">
+            {{table.id}}
+        </div>
+        @for (seat of table.seats; track $index) {
+            <div class="seat" [style.top] = "seat.positionY + '%'" [style.right] = "seat.positionX + '%'">
+            </div>
+        }
+    </div>
+}
+</div>

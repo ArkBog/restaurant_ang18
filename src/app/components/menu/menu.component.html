@@ -1,11 +1,17 @@
 <div class="container">
   @for (type of types; track $index) {
-  <div class="bar" >
+  <div class="bar">
     <p>{{ type | replaceUnderscore }}</p>
-    <p class="material-symbols-outlined" (click)="toogleBar(type, $index, $event)"> {{icon}} </p>
+    <p
+      class="material-symbols-outlined"
+      (click)="toogleBar(type, $index, $event)"
+    >
+      {{ icon }}
+    </p>
   </div>
 
-  @for (item of menu; track item.id) { @if (item.type === type && showProdcuts === true && type === typeValue) {
-    <app-product [product]=item></app-product>
+  @for (item of menu; track item.id) { @if (item.type === type && showProdcuts
+  === true && type === typeValue) {
+  <app-product [product]="item"></app-product>
   } } }
 </div>
