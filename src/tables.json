@@ -22,6 +22,144 @@
                 }
 
             ]
+        },
+        {
+            "id": 2,
+            "name": "4 people table",
+            "seats":[
+                {
+                    "positionX": 40,
+                    "positionY": 0
+                },
+                {
+                    "positionX": 82,
+                    "positionY": 40
+                },
+                {
+                    "positionX": 40,
+                    "positionY": 82
+                },
+                {
+                    "positionX": 0,
+                    "positionY": 40
+                }
+
+            ]
+        },
+        {
+            "id": 3,
+            "name": "4 people table",
+            "seats":[
+                {
+                    "positionX": 40,
+                    "positionY": 0
+                },
+                {
+                    "positionX": 82,
+                    "positionY": 40
+                },
+                {
+                    "positionX": 40,
+                    "positionY": 82
+                },
+                {
+                    "positionX": 0,
+                    "positionY": 40
+                }
+
+            ]
+        },
+        {
+            "id": 4,
+            "name": "4 people table",
+            "seats":[
+                {
+                    "positionX": 40,
+                    "positionY": 0
+                },
+                {
+                    "positionX": 82,
+                    "positionY": 40
+                },
+                {
+                    "positionX": 40,
+                    "positionY": 82
+                },
+                {
+                    "positionX": 0,
+                    "positionY": 40
+                }
+
+            ]
+        },
+        {
+            "id": 5,
+            "name": "4 people table",
+            "seats":[
+                {
+                    "positionX": 40,
+                    "positionY": 0
+                },
+                {
+                    "positionX": 82,
+                    "positionY": 40
+                },
+                {
+                    "positionX": 40,
+                    "positionY": 82
+                },
+                {
+                    "positionX": 0,
+                    "positionY": 40
+                }
+
+            ]
+        },
+        {
+            "id": 6,
+            "name": "4 people table",
+            "seats":[
+                {
+                    "positionX": 40,
+                    "positionY": 0
+                },
+                {
+                    "positionX": 82,
+                    "positionY": 40
+                },
+                {
+                    "positionX": 40,
+                    "positionY": 82
+                },
+                {
+                    "positionX": 0,
+                    "positionY": 40
+                }
+
+            ]
+        },
+        {
+            "id": 7,
+            "name": "4 people table",
+            "seats":[
+                {
+                    "positionX": 40,
+                    "positionY": 0
+                },
+                {
+                    "positionX": 82,
+                    "positionY": 40
+                },
+                {
+                    "positionX": 40,
+                    "positionY": 82
+                },
+                {
+                    "positionX": 0,
+                    "positionY": 40
+                }
+
+            ]
         }
     ]
 }
