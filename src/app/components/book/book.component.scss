@@ -1,27 +1,83 @@
-.container{
-    width: 1000px;
+@import "../../../variables.scss";
+
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 30px;
+  justify-content: space-around;
+  .space {
+    height: 120px;
+    width: 120px;
+    position: relative;
+    .table {
+      background-color: white;
+      width: 120px;
+      height: 120px;
+      text-align: center;
+      padding-top: 40%;
+    }
+    .seat {
+      position: absolute;
+      background-color: yellow;
+      width: 20px;
+      height: 20px;
+      z-index: 2;
+    }
+  }
+}
+form {
+  text-align: center;
+  button {
+    outline: none;
+    border: none;
+    width: 300px;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    .space{
+    margin-top: 50px;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    transition: $trans;
+
+    &:hover {
+      background-color: $third-color;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .container {
+      width: 1000px;
+      margin: auto;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 50px;
+      .space {
         height: 120px;
         width: 120px;
         position: relative;
-        .table{
-            background-color: white;
-            width: 120px;
-            height: 120px;
-            text-align: center;
-            padding-top: 40%;
+        .table {
+          background-color: white;
+          width: 120px;
+          height: 120px;
+          text-align: center;
+          padding-top: 40%;
         }
-        .seat{
-            position: absolute;
-            background-color: yellow;
-            width: 20px;
-            height: 20px;
-            z-index: 2;
+        .seat {
+          position: absolute;
+          background-color: yellow;
+          width: 20px;
+          height: 20px;
+          z-index: 2;
         }
-    
+      }
     }
+  }
 }
