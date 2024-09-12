@@ -1,0 +1,8 @@
+<div class="order">
+    <h1>Your order</h1>
+    @for (food of order.foods; track $index) {
+        <div>
+           {{data.menu[$index].name}}
+        </div>
+    }
+</div>

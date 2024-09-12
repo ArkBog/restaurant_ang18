@@ -88,6 +88,12 @@
       color: $primary-color;
       background-color: $secondary-color;
       font-size: 32px;
+
+      a{
+        color: $primary-color;
+        background-color: $secondary-color;
+        text-decoration: none;
+      }
     }
     &:hover{
       cursor: pointer;

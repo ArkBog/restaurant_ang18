@@ -1,11 +1,26 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CartService {
+  constructor() {}
 
-  constructor() { }
+  tablesId: number[] = [];
+  choosenFoods: any = [];
 
-  tablesId:number[] = [] 
+  createNewPositionInOrder(param: number) {
+    let order = {
+      id: param,
+      quantity: 1,
+    };
+    this.choosenFoods.push(order);
+  }
+
+  addToCart(param: number) {
+
+    
+
+    console.log('done');
+  }
 }

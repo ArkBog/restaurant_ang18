@@ -6,5 +6,5 @@
       <p class="category">{{ product.category }}</p>
       <p class="price">{{ product.price | currency }}</p>
     </div>
-    <button>ADD TO ORDER</button>
+    <button (click)="addToCart(product.id)">ADD TO ORDER</button>
   </div>

@@ -22,3 +22,8 @@ export interface Table {
   name: string;
   seats: Seat[];
 }
+
+export interface Order {
+  tables: number[];
+  foods: number[]
+}

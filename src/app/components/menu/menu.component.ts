@@ -3,6 +3,7 @@ import { ApiService } from '../../services/api.service';
 import { ReplaceUnderscorePipe } from '../../pipes/replace-underscore.pipe';
 import { CurrencyPipe } from '@angular/common';
 import { ProductComponent } from '../product/product.component';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-menu',
@@ -45,4 +46,6 @@ export class MenuComponent {
     }
     console.log($event);
   }
+
+
 }
