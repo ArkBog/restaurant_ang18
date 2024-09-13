@@ -2,7 +2,7 @@
     <h1>Your order</h1>
     @for (food of order.foods; track $index) {
         <div>
-           {{data.menu[$index].name}}
+           {{data.menu[food.id].name}} {{food.quantity}}
         </div>
     }
 </div>

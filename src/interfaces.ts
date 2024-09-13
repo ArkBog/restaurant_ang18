@@ -25,5 +25,5 @@ export interface Table {
 
 export interface Order {
   tables: number[];
-  foods: number[]
+  foods: any[]
 }

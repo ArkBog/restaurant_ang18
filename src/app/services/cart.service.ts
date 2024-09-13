@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { config } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -7,7 +8,7 @@ export class CartService {
   constructor() {}
 
   tablesId: number[] = [];
-  choosenFoods: any = [];
+  choosenFoods = [{id: 1, quantity: 1}];
 
   createNewPositionInOrder(param: number) {
     let order = {
@@ -17,7 +18,16 @@ export class CartService {
     this.choosenFoods.push(order);
   }
 
-  addToCart(param: number) {
+  addToCart(param: number):void {
+
+    const founded = this.choosenFoods.find((e:any) => e.id === param)
+
+      if(founded){
+        founded.quantity++
+        console.log(founded)
+      } else {
+        this.createNewPositionInOrder(param)
+      }
 
     
 
