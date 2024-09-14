@@ -23,6 +23,11 @@ export interface Table {
   seats: Seat[];
 }
 
+export interface Food{
+  id: number;
+  quantity: number;
+}
+
 export interface Order {
   tables: number[];
   foods: any[]

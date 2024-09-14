@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { config } from 'rxjs';
+import { Food } from '../../interfaces';
 
 @Injectable({
   providedIn: 'root',
@@ -7,11 +8,11 @@ import { config } from 'rxjs';
 export class CartService {
   constructor() {}
 
-  tablesId: number[] = [];
-  choosenFoods = [{id: 1, quantity: 1}];
+  tablesId: number[] = [1];
+  choosenFoods:Food[] = [];
 
   createNewPositionInOrder(param: number) {
-    let order = {
+    let order: Food = {
       id: param,
       quantity: 1,
     };
@@ -28,9 +29,6 @@ export class CartService {
       } else {
         this.createNewPositionInOrder(param)
       }
-
-    
-
     console.log('done');
   }
 }

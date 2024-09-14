@@ -1,0 +1,9 @@
+.order {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.order .table {
+  padding: 10px;
+}
