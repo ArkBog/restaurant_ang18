@@ -6,4 +6,16 @@
     .table{
         padding: 10px;
     }
+    .container{
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        padding: 20px;
+        .subcontainer{
+            display: flex;
+            p{
+                padding-left: 10px;
+            }
+        }
+    }
 }

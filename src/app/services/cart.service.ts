@@ -9,7 +9,7 @@ export class CartService {
   constructor() {}
 
   tablesId: number[] = [1];
-  choosenFoods:Food[] = [];
+  choosenFoods:Food[] = [{id: 1, quantity: 1}];
 
   createNewPositionInOrder(param: number) {
     let order: Food = {

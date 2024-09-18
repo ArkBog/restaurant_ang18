@@ -13,8 +13,24 @@
         <input type="time" id="time" name="time" min="12:00" max="22:00" step="3600" required/>
     </label>
   </div>
-  } } @for (food of order.foods; track $index) {
-  <div>{{ data.menu[food.id - 1].name }} {{ food.quantity }}</div>
+  } } 
+  @if(order.foods.length > 0){
+    <h2>Your food:</h2>
+    @for (food of order.foods; track $index) {
+    <div class="container">
+      <p>{{ data.menu[food.id - 1].name }}</p>
+      <div class="subcontainer">Quantity: 
+        <p (click)="changeFoodQuantity('-', $index)">-</p>
+        <p>{{ food.quantity }}</p> 
+        <p (click)="changeFoodQuantity('+', $index)">+</p>
+      </div>
+      <p>Price: {{ data.menu[food.id - 1].price * food.quantity}}</p>
+      <p>X</p>
+    </div>
+    
+    }
   }
+  
+
   <button type="submit">Submit</button>
 </form>

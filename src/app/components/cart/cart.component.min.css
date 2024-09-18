@@ -1,1 +1,1 @@
-.order{width:100%;text-align:center;padding:20px}.order .table{padding:10px}
+.order{width:100%;text-align:center;padding:20px}.order .table{padding:10px}.order .container{display:flex;justify-content:center;gap:10%;padding:20px}.order .container .subcontainer{display:flex}.order .container .subcontainer p{padding-left:10px}
