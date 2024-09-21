@@ -1,21 +1,63 @@
-.order{
-    width: 100%;
+@import "../../../variables.scss";
+.empty{
     text-align: center;
-    padding: 20px;
+    font-size: 20px;
+    padding: 50px;
+}
+.order {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
 
-    .table{
-        padding: 10px;
+  input{
+    outline: none;
+    border: none;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    transition: $trans;
+    margin: 10px;
+  }
+
+  .table {
+    padding: 10px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px;
+    .button:hover {
+      cursor: pointer;
     }
-    .container{
-        display: flex;
-        justify-content: center;
-        gap: 10%;
-        padding: 20px;
-        .subcontainer{
-            display: flex;
-            p{
-                padding-left: 10px;
-            }
-        }
+    .subcontainer {
+      display: flex;
+      .button {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
+  }
+  .submit {
+    outline: none;
+    border: none;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    transition: $trans;
+
+    &:hover {
+      background-color: $third-color;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
 }

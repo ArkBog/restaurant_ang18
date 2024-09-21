@@ -15,10 +15,14 @@
   padding: 20px;
 }
 
+.order .container .button:hover {
+  cursor: pointer;
+}
+
 .order .container .subcontainer {
   display: flex;
 }
 
-.order .container .subcontainer p {
+.order .container .subcontainer .button {
   padding-left: 10px;
 }

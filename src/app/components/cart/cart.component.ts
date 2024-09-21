@@ -3,11 +3,12 @@ import { CartService } from '../../services/cart.service';
 import { ApiService } from '../../services/api.service';
 import { Order } from '../../../interfaces';
 import { DatePipe } from '@angular/common';
+import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [DatePipe],
+  imports: [DatePipe, ReactiveFormsModule],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.scss',
 })
@@ -40,6 +41,24 @@ export class CartComponent {
         }
     } else {
       this.order.foods[param].quantity++;
+    }
+  }
+
+  removeItemFromCart(param:number){
+    const newFood = this.order.foods.splice(param, 1);
+  }
+
+  orderForm = new FormGroup({
+    date: new FormControl('', Validators.required),
+    time: new FormControl('', Validators.required),
+    order: new FormControl(this.order)
+  })
+
+  orderSubmit(){
+    if(this.orderForm.valid){
+      alert("git")
+    } else {
+      alert("dupa")
     }
   }
 }
