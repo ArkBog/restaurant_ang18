@@ -55,10 +55,11 @@ export class CartComponent {
   })
 
   orderSubmit(){
-    if(this.orderForm.valid){
+    if(this.orderForm.valid || this.order.tables.length === 0){
       alert("git")
     } else {
       alert("dupa")
     }
+    console.log(this.orderForm)
   }
 }

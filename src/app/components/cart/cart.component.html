@@ -1,40 +1,44 @@
 @if(order.tables.length === 0 && order.foods.length === 0){
 <p class="empty">Your cart is empty. Add something delicious!</p>
 } @else {
-<form class="order" [formGroup] = "orderForm" (submit)="orderSubmit()">
+<form class="order" [formGroup]="orderForm" (submit)="orderSubmit()">
   <h1>Your order</h1>
+
   @if(order.tables.length > 0){
   <h2 class="tables">Your tables:</h2>
-  @for (table of order.tables; track $index) {
-  <div class="table">
-    <p>{{ table }}</p>
-    <label
-      >Date:
-      <input
-        type="date"
-        id="date"
-        name="date"
-        [min]="today | date : 'yyyy-MM-dd'"
-        required
-        formControlName = "date"
-      />
-    </label>
-    <br />
-    <label
-      >Time:
-      <input
-        type="time"
-        id="time"
-        name="time"
-        min="12:00"
-        max="22:00"
-        step="3600"
-        required
-        formControlTime = "time"
-      />
-    </label>
+  <div class="flex">
+    @for (table of order.tables; track $index) {
+    <div class="table">
+      <p>{{ table }}</p>
+    </div>
+    }
   </div>
-  } } @if(order.foods.length > 0){
+  <label
+    >Date:
+    <input
+      type="date"
+      id="date"
+      name="date"
+      [min]="today | date : 'yyyy-MM-dd'"
+      required
+      formControlName="date"
+    />
+  </label>
+  <br />
+  <label
+    >Time:
+    <input
+      type="time"
+      id="time"
+      name="time"
+      min="12:00"
+      max="22:00"
+      step="3600"
+      required
+      formControlName="time"
+    />
+  </label>
+  } @if(order.foods.length > 0){
   <h2>Your food:</h2>
   @for (food of order.foods; track $index) {
   <div class="container">

@@ -8,7 +8,7 @@ import { Food } from '../../interfaces';
 export class CartService {
   constructor() {}
 
-  tablesId: number[] = [1];
+  tablesId: number[] = [2,1,3];
   choosenFoods:Food[] = [{id: 1, quantity: 1}];
 
   createNewPositionInOrder(param: number) {
